@@ -3,8 +3,6 @@ from openpyxl.chart import BarChart, Reference
 
 wb = xl.load_workbook("transactions.xlsx")
 sheet = wb["Sheet1"]
-cell = sheet["a1"]
-cell = sheet.cell(1, 1)
 
 #auto-calculation
 for row in range(2, sheet.max_row + 1): #row starts from second row
