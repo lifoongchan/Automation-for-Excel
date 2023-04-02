@@ -9,7 +9,7 @@ def process_workbook(filename):
     #auto-calculation
     for row in range(2, sheet.max_row + 1): #row starts from second row
         cell = sheet.cell(row, 3) #cells start from third column
-        corrected_price = float(cell.value) * 0.9
+        corrected_price = float(cell.value) * 0.6
         corrected_price_cell = sheet.cell(row, 4)
         corrected_price_cell.value = corrected_price #insert values in the targeted locations
 
